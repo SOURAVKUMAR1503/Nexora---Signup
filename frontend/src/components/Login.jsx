@@ -25,7 +25,7 @@ function Login() {
 
     try {
       setLoading(true);
-      const response = await axios.post("http://localhost:5000/login", { email, password });
+      const response = await axios.post("https://backend-rosy-three-29.vercel.app/login", { email, password });
       if (response.data.success) navigate("/dashboard");
     } catch (error) {
       setError(error.response?.data?.message || "Unable to connect to the server.");
