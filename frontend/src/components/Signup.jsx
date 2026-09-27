@@ -31,7 +31,7 @@ function Signup() {
 
     try {
       setLoading(true);
-      const response = await axios.post("http://localhost:5000/signup", { name, email, password });
+      const response = await axios.post("https://backend-rosy-three-29.vercel.app/signup", { name, email, password });
       if (response.data.success) {
         setSuccess("Account created successfully. Redirecting to login...");
         setTimeout(() => navigate("/login"), 1000);
