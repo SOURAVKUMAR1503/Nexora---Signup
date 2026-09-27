@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #172033;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: radial-gradient(circle at top left, #dce9ff 0, transparent 32%), radial-gradient(circle at bottom right, #e7ddff 0, transparent 30%), #f4f7fb;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    background: #fff;
+    border: 1px solid #e5e9f2;
+    border-radius: 22px;
+    box-shadow: 0 20px 60px rgba(36, 52, 84, .12);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.brand-icon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: #315efb;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.brand h1 {
+    font-size: 21px;
+    letter-spacing: 2px;
+}
+
+.auth-heading {
+    margin-bottom: 25px;
+}
+
+.auth-heading h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.auth-heading p {
+    color: #697386;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #d9deea;
+    border-radius: 11px;
+    outline: none;
+    color: #172033;
+    background: #fff;
+}
+
+.form-group input:focus {
+    border-color: #315efb;
+    box-shadow: 0 0 0 3px rgba(49, 94, 251, .1);
+}
+
+.primary-button,
+.logout-button {
+    width: 100%;
+    border: none;
+    border-radius: 11px;
+    padding: 14px;
+    background: #315efb;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.primary-button:hover,
+.logout-button:hover {
+    background: #244bd2;
+}
+
+.primary-button:disabled {
+    opacity: .65;
+    cursor: not-allowed;
+}
+
+.error-message,
+.success-message {
+    margin: 4px 0 15px;
+    padding: 11px 12px;
+    border-radius: 9px;
+    font-size: 13px;
+}
+
+.error-message {
+    background: #fff0f0;
+    color: #c0392b;
+}
+
+.success-message {
+    background: #eaf8ef;
+    color: #218c4b;
+}
+
+.demo-info {
+    margin-top: 22px;
+    padding: 12px;
+    border-radius: 11px;
+    background: #f5f7fb;
+    text-align: center;
+    font-size: 12px;
+    color: #697386;
+}
+
+.demo-info p {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.demo-info span {
+    margin: 0 5px;
+}
+
+.switch-text {
+    margin-top: 20px;
+    text-align: center;
+    color: #697386;
+    font-size: 13px;
+}
+
+.switch-text a {
+    color: #315efb;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.dashboard-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: #f4f7fb;
+}
+
+.dashboard-card {
+    width: 100%;
+    max-width: 620px;
+    padding: 55px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #e5e9f2;
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(36, 52, 84, .12);
+}
+
+.dashboard-icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #eaf7ee;
+    color: #229954;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.dashboard-label {
+    color: #315efb;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.dashboard-card h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.dashboard-text {
+    color: #697386;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.logout-button {
+    max-width: 160px;
+}
+
+@media (max-width: 500px) {
+
+    .auth-card,
+    .dashboard-card {
+        padding: 30px 22px;
+    }
+
+    .auth-heading h2,
+    .dashboard-card h1 {
+        font-size: 26px;
+    }
+
+    .demo-info span {
+        display: block;
+        margin: 4px 0;
+    }
+}
